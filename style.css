@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #1c1c1c;
+}
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+    text-align: center;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    color: white;
+}
+
+main > div{
+    margin: 1rem 0;
+}
+
+.header h1{
+    font-weight: 600;
+}
+
+#display{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    width: 50%;
+    min-width: 300px;
+}
+
+
+#display .time-container{
+    width: 3.2rem;
+    /* height: 1rem; */
+}
+
+#display  h3{
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.btn{
+    margin: 0 2rem;
+}
+
+#btn-1{
+    font-size: 3rem;
+    color: rgb(114, 114, 231);
+}
+
+#btn-2, #btn-3{
+    font-size: 1.7rem;
+}
+
+.log-container{
+    width: 50%;
+    max-height: 200px;
+    overflow-y: scroll;
+    text-align: center;
+}
+
+.log-container::-webkit-scrollbar {
+    width: 6px;
+}
+  
+.log-container:hover::-webkit-scrollbar-thumb{
+    background-color:#ddd;
+}
+
+
+@media screen and (max-width: 600px){
+    main{
+        width: 100vw;
+        height: 100vh;
+        background-color: #1c1c1c;
+    }
+    .header{
+        margin-top: 30%;
+    }
+}
